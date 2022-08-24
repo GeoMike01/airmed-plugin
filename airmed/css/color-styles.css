@@ -1,0 +1,14 @@
+:root{
+  --airmed-color-primary: #4a6596;
+  --airmed-color-accent: #4a6596;
+  --airmed-warning: #ffc107;
+  --airmed-danger: #dc3545;
+  --airmed-wrapper-bg-color: #ffffff;
+  --airmed-content-bg-color: /*#ce8dce*/ #ffffff;
+  --airmed-sidebar-bg-color: #efeff4;
+  --airmed-menu-text: #777777;
+  --airmed-main-body-bg-color: #ffffff;
+  --airmed-border: #dee2e6;
+  --airmed-carousel-background: #888888;
+  --violet: #6442FF;
+}

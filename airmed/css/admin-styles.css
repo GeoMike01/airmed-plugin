@@ -1,0 +1,142 @@
+/* Flexbox setup */
+/*
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+.wrapper {
+  @include flexbox();
+}
+
+.item {
+  @include flex(1 200px);
+  @include order(2);
+}
+*/
+.airmed-wrapper .form-check input[type=checkbox]{
+  margin-left: -1.0rem;
+  margin-top: 0.5rem;
+} 
+
+.airmed-wrapper .airmed-admin-title{
+  padding:.5rem 0rem;
+}
+.airmed-wrapper .airmed-card{
+  max-width:100%;
+  padding:0px;
+  margin-top:0px;
+}
+.airmed-wrapper .airmed-theme-alert{
+  padding: .5rem .5rem;
+  margin-top: .5rem;
+  /*max-width: fit-content;*/
+  font-size: .75rem;
+  margin-bottom: .5rem;
+}
+.airmed-wrapper .airmed-card .img-container{
+  padding:5px;
+  border: 1px solid #cccccc;
+  border-radius: .25rem;
+  position:relative;
+}
+
+.airmed-wrapper .airmed-card .image{
+  max-width:100%;
+  max-height:250px;
+  object-fit: cover;
+  display:none;
+}
+.airmed-wrapper .airmed-arrow{
+  width: .5rem;
+  height: 1rem;
+  margin: .3rem 0;
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: -9px;
+}
+.airmed-wrapper .airmed-arrow:before{
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+
+  border-width: .5rem .5rem .5rem 0;
+
+  left:0;
+  border-right-color: #cccccc;
+}
+  
+.airmed-wrapper .airmed-arrow:after{
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+
+    border-width: .5rem .5rem .5rem 0;
+    
+    left: 1px;
+    border-right-color: #fff;
+}
+
+@media (max-width: 991.98px){
+  .airmed-wrapper .airmed-card .image-cell{
+    margin-top:5px;
+    padding-top:.5rem;
+  }
+  .airmed-wrapper .airmed-arrow{
+    width: .5rem;
+    height: .5rem;
+    margin: auto;
+    top:0px;
+    left:0px;
+    right:0px;
+  }
+  .airmed-wrapper .airmed-arrow:before{
+    border-width: 0 .5rem .5rem .5rem;
+    top:0px;
+    border-color: transparent;
+    border-bottom-color: #cccccc;
+    left: 0px;
+  }
+  .airmed-wrapper .airmed-arrow:after{
+    border-width: 0 .5rem .5rem .5rem;
+    border-color: transparent;    
+    top:1px;
+    border-bottom-color: #ffffff;
+    left: 0px;
+
+  }
+  
+}
+
+.airmed-wrapper .card-body .card-body .card-body{
+  padding:0.5rem;
+}
+
+/** editor styles **/
+.airmed_options_payment_success_msg p{
+  margin:0px;
+}
